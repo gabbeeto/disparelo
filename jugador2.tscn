@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfexcx3wrrpaq"]
+
+[ext_resource type="Script" uid="uid://efqyts7f6sh7" path="res://jugador2.gd" id="1_lse3a"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0bgiq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lse3a"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_lse3a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_0bgiq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.234353, 0)
+mesh = SubResource("BoxMesh_lse3a")

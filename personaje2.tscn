@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://pu401cvicji5"]
+
+[ext_resource type="PackedScene" uid="uid://bk6nbamh2gdqa" path="res://psj3.tscn" id="1_5yeub"]
+
+[node name="personaje" instance=ExtResource("1_5yeub")]
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82182, 0)
